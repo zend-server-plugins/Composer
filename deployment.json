@@ -1,0 +1,6 @@
+{
+  "name" : "Composer",
+  "version" : "1.0.0",
+  "type": ["zray"],
+  "logo": "zray/logo.png"
+}
