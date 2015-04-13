@@ -29,6 +29,10 @@ class Composer
 
     public function registerExit($context, &$storage)
     {
+    	if (! file_exists($composerDir.'/installed.json')) {
+            return false;
+        }
+        
         $composerDir = dirname($context['calledFromFile']);
         $json        = file_get_contents($composerDir.'/installed.json');
         $data        = json_decode($json);
