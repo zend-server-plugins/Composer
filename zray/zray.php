@@ -29,12 +29,14 @@ class Composer
 
     public function registerExit($context, &$storage)
     {
-    	if (! file_exists($composerDir.'/installed.json')) {
+    	$composerDir = dirname($context['calledFromFile']);
+        $jsonFile    = $composerDir.'/installed.json';
+
+        if (file_exists($jsonFile) || !is_readable($jsonFile)) {
             return false;
         }
-        
-        $composerDir = dirname($context['calledFromFile']);
-        $json        = file_get_contents($composerDir.'/installed.json');
+
+        $json        = file_get_contents($jsonFile);
         $data        = json_decode($json);
 
         foreach ($data as $package) {
