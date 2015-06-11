@@ -1,8 +1,14 @@
 {
   "name" : "composer",
   "display_name" : "Composer",
-  "version" : "1.0.0",
+  "version" : "1.0.1",
   "type": ["zray"],
   "logo": "logo.png",
-  "eula": "LICENSE.txt"
+  "eula": "LICENSE.txt",
+  "readme": "README.txt",
+  "dependencies": {
+    "plugin": {
+        "min": "1.0.0"
+    }
+  }
 }
