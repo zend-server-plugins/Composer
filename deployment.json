@@ -1,7 +1,7 @@
 {
   "name" : "composer",
   "display_name" : "Composer",
-  "version" : "1.0.1",
+  "version" : "1.0.2",
   "type": ["zray"],
   "logo": "logo.png",
   "eula": "LICENSE.txt",
