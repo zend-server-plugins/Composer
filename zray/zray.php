@@ -38,6 +38,14 @@ class Composer
 
         $json = file_get_contents($jsonFile);
         $data = json_decode($json);
+	
+	/*
+	 * Composer 1.x - output is already an array
+	 * Composer 2.x - output is an object; the array we want is in the 'packages' property
+	 */
+	if (is_object($data) && isset($data->packages)) {
+            $data = $data->packages;
+	}
 
         foreach ($data as $package) {
             $source = (isset($package->source) && isset($package->source->url))
