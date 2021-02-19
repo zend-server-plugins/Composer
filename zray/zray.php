@@ -48,6 +48,7 @@ class Composer
 	}
 
         foreach ($data as $package) {
+	    if (!is_object($package)) continue;
             $source = (isset($package->source) && isset($package->source->url))
                 ? $package->source->url
                 : '';
