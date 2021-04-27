@@ -1,3 +1,7 @@
+1.0.4 - 2021-04-28
+- Add CHANGELOG.txt (by Rain Viigipuu - https://github.com/rainviigipuu/)
+- Added safety check on 'package' object (by MassiCav - https://github.com/MassiCav
+
 1.0.3 - 2020-11-13
 - Bugfix to work with Composer 1.x & 2.x (by Evan Johnson - https://github.com/crimsonkissaki)
 
