@@ -1,0 +1,15 @@
+1.0.3 - 2020-11-13
+- Bugfix to work with Composer 1.x & 2.x (by Evan Johnson - https://github.com/crimsonkissaki)
+
+1.0.2 - 2015-07-07
+- Return early when the file does not exist and fix a minor CGL issue. (by Amit Dar - https://github.com/amitdar)
+
+1.0.1 - 2015-06-11
+- Added readme and dependencies (by Amit Dar - https://github.com/amitdar)
+- Update deployment.json (by Anya Suraski - https://github.com/anyatar)
+- Update logo (by Amit Dar - https://github.com/amitdar)
+- Added display_name (by Idan Gozlan - https://github.com/idangozlan)
+- Handled the case when "installed.json" file is missing (by Amit Dar - https://github.com/amitdar)
+
+1.0.0 - 2015-03-02
+- New Plugin (by Amit Dar - https://github.com/amitdar)
